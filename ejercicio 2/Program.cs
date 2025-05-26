@@ -1,38 +1,45 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Ingrese la opcion que quiera realizar: \n[1]. Sumar\n[2].Restar\n[3].Multiplicar\n[4].Dividir");
-string textoIngresado = Console.ReadLine();
+
 
 int respuestaUsuario = 1;
 
-if (int.TryParse(textoIngresado, out int opcion) && opcion <= 4 && opcion >= 1)
+
+do
 {
-    do
+    Console.WriteLine("Ingrese la opcion que quiera realizar: \n[1].Sumar\n[2].Restar\n[3].Multiplicar\n[4].Dividir");
+    string textoIngresado = Console.ReadLine();
+    if (int.TryParse(textoIngresado, out int opcion) && opcion <= 4 && opcion >= 1)
     {
         switch (opcion)
         {
-            case 1: int suma = funcionSumar();
+            case 1:
+                int suma = funcionSumar();
                 Console.WriteLine($"El resultado de la suma es: {suma}");
                 break;
-            case 2: int resta = funcionResta();
+            case 2:
+                int resta = funcionResta();
                 Console.WriteLine($"El resultado de la resta es: {resta}");
                 break;
-            case 3: int Multiplicar = funcionMultiplicar();
+            case 3:
+                int Multiplicar = funcionMultiplicar();
                 Console.WriteLine($"El resultado de la multiplicacion es: {Multiplicar}");
                 break;
-            case 4: int dividir = funcionDividir();
+            case 4:
+                int dividir = funcionDividir();
                 Console.WriteLine($"El resultado de la división es: {dividir}");
                 break;
         }
 
-        Console.WriteLine("Desea realizar otra operacion?\n [1]. SI\n[2].NO");
+        Console.WriteLine("Desea realizar otra operacion?\n[1].SI\n[2].NO");
         string respuesta = Console.ReadLine();
         if (int.TryParse(respuesta, out int resp))
         {
             respuestaUsuario = resp;
         }
 
-    } while (respuestaUsuario != 2);
-}
+    }
+} while (respuestaUsuario != 2);
+
 
 
 
