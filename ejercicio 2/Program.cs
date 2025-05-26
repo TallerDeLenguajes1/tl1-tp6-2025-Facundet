@@ -54,9 +54,10 @@ do
                 double entero = funcionParteEntera();
                 Console.WriteLine($"La parte entera es: {entero}");
                 break;
-            case 11: funcionMaxAndMin();
+            case 11:
+                funcionMaxAndMin();
                 break;
-                
+
         }
 
         Console.WriteLine("Desea realizar otra operacion?\n[1].SI\n[2].NO");
@@ -66,6 +67,10 @@ do
             respuestaUsuario = resp;
         }
 
+    }
+    else
+    {
+        Console.WriteLine("El numero ingresado no es valido. Ingrese un valor entre 1 y 11");
     }
 } while (respuestaUsuario != 2);
 
