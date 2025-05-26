@@ -1,0 +1,15 @@
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\bin\Debug\net8.0\tl1-tp6-2025-Facundet.exe
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\bin\Debug\net8.0\tl1-tp6-2025-Facundet.deps.json
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\bin\Debug\net8.0\tl1-tp6-2025-Facundet.runtimeconfig.json
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\bin\Debug\net8.0\tl1-tp6-2025-Facundet.dll
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\bin\Debug\net8.0\tl1-tp6-2025-Facundet.pdb
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.GeneratedMSBuildEditorConfig.editorconfig
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.AssemblyInfoInputs.cache
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.AssemblyInfo.cs
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.csproj.CoreCompileInputs.cache
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.sourcelink.json
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.dll
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\refint\tl1-tp6-2025-Facundet.dll
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.pdb
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\tl1-tp6-2025-Facundet.genruntimeconfig.cache
+B:\FACULTAD\3_Tercer año\3-Taller de lenguajes 1\Segundo parcial\Semana 6\tp06\tl1-tp6-2025-Facundet\obj\Debug\net8.0\ref\tl1-tp6-2025-Facundet.dll
