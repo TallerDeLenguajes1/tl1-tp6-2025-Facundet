@@ -10,10 +10,19 @@ if (int.TryParse(textoIngresado, out int opcion) && opcion <= 4 && opcion >= 1)
     {
         switch (opcion)
         {
-            case 1: int suma = funcionSumar(); break;
-            case 2: int resta = funcionResta(); break;
+            case 1: int suma = funcionSumar();
+                Console.WriteLine($"El resultado de la suma es: {suma}");
+                break;
+            case 2: int resta = funcionResta();
+                Console.WriteLine($"El resultado de la resta es: {resta}");
+                break;
+            case 3: int Multiplicar = funcionMultiplicar();
+                Console.WriteLine($"El resultado de la multiplicacion es: {Multiplicar}");
+                break;
+            case 4: int dividir = funcionDividir();
+                Console.WriteLine($"El resultado de la división es: {dividir}");
+                break;
         }
-
 
         Console.WriteLine("Desea realizar otra operacion?\n [1]. SI\n[2].NO");
         string respuesta = Console.ReadLine();
@@ -23,7 +32,6 @@ if (int.TryParse(textoIngresado, out int opcion) && opcion <= 4 && opcion >= 1)
         }
 
     } while (respuestaUsuario != 2);
-
 }
 
 
@@ -71,12 +79,44 @@ static int funcionResta()
     return (primerNumero - segundoNumero);
 }
 
-static int funcionMultiplicar(int a, int b)
+static int funcionMultiplicar()
 {
-    return (a * b);
+    int primerNumero = 0;
+    int segundoNumero = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (int.TryParse(textoIngresado, out int a))
+    {
+        primerNumero = a;
+    }
+
+    Console.WriteLine("Ingrese el segundo numero: ");
+    string SegundoTexto = Console.ReadLine();
+    if (int.TryParse(SegundoTexto, out int b))
+    {
+        segundoNumero = b;
+    }
+
+    return (primerNumero * segundoNumero);
 }
 
-static int funcionDividir(int a, int b)
+static int funcionDividir()
 {
-    return (a / b);
+    int primerNumero = 0;
+    int segundoNumero = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (int.TryParse(textoIngresado, out int a))
+    {
+        primerNumero = a;
+    }
+
+    Console.WriteLine("Ingrese el segundo numero: ");
+    string SegundoTexto = Console.ReadLine();
+    if (int.TryParse(SegundoTexto, out int b))
+    {
+        segundoNumero = b;
+    }
+
+    return (primerNumero / segundoNumero);
 }
