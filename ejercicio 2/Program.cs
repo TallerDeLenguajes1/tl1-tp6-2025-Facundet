@@ -1,14 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using System.Windows.Markup;
+
 int respuestaUsuario = 1;
 
 
 do
 {
-    Console.WriteLine("Ingrese la opcion que quiera realizar: \n[1].Sumar\n[2].Restar\n[3].Multiplicar\n[4].Dividir");
+    Console.WriteLine("Ingrese la opcion que quiera realizar: \n[1].Sumar\n[2].Restar\n[3].Multiplicar\n[4].Dividir\n[5].Valor Absoluto\n[6].El cuadrado de un numero\n[7].La raiz cuadrada\n[8].El seno\n[9].El coseno\n[10].La parte entera de un tipo float\n[11].El maximo y minimo entre dos numeros");
     string textoIngresado = Console.ReadLine();
-    if (int.TryParse(textoIngresado, out int opcion) && opcion <= 4 && opcion >= 1)
+    if (int.TryParse(textoIngresado, out int opcion) && opcion <= 11 && opcion >= 1)
     {
         switch (opcion)
         {
@@ -28,6 +30,33 @@ do
                 int dividir = funcionDividir();
                 Console.WriteLine($"El resultado de la división es: {dividir}");
                 break;
+            case 5:
+                int abosluto = funcionValorAbsoluto();
+                Console.WriteLine($"El valor absoluto es: {abosluto}");
+                break;
+            case 6:
+                int cuadrado = funcionCuadrado();
+                Console.WriteLine($"El cuadrado del numero ingresado es: {cuadrado}");
+                break;
+            case 7:
+                double raiz = funcionRaizCuadrada();
+                Console.WriteLine($"La raíz cuadrada es: {raiz}");
+                break;
+            case 8:
+                double seno = funcionSeno();
+                Console.WriteLine($"El seno es: {seno}");
+                break;
+            case 9:
+                double coseno = funcionCoseno();
+                Console.WriteLine($"El coseno es: {coseno}");
+                break;
+            case 10:
+                double entero = funcionParteEntera();
+                Console.WriteLine($"La parte entera es: {entero}");
+                break;
+            case 11: funcionMaxAndMin();
+                break;
+                
         }
 
         Console.WriteLine("Desea realizar otra operacion?\n[1].SI\n[2].NO");
@@ -126,4 +155,98 @@ static int funcionDividir()
     }
 
     return (primerNumero / segundoNumero);
+}
+
+static int funcionValorAbsoluto()
+{
+    int absoluto = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (int.TryParse(textoIngresado, out int a))
+    {
+        absoluto = Math.Abs(a);
+    }
+
+    return absoluto;
+}
+
+static int funcionCuadrado()
+{
+    int cuadrado = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (int.TryParse(textoIngresado, out int a))
+    {
+        cuadrado = a * a;
+    }
+
+    return cuadrado;
+}
+
+static double funcionRaizCuadrada()
+{
+    double raiz = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (double.TryParse(textoIngresado, out double a))
+    {
+        raiz = Math.Sqrt(a);
+    }
+
+    return raiz;
+}
+
+static double funcionSeno()
+{
+    double seno = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (double.TryParse(textoIngresado, out double a))
+    {
+        seno = Math.Sin(a);
+    }
+
+    return seno;
+}
+
+static double funcionCoseno()
+{
+    double coseno = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (double.TryParse(textoIngresado, out double a))
+    {
+        coseno = Math.Cos(a);
+    }
+
+    return coseno;
+}
+
+static double funcionParteEntera()
+{
+    double numero = 0;
+    Console.Write("Ingrese el primer numero: ");
+    string textoIngresado = Console.ReadLine();
+    if (double.TryParse(textoIngresado, out double a))
+    {
+        numero = (int)numero;
+    }
+
+    return numero;
+}
+
+static void funcionMaxAndMin()
+{
+    Console.WriteLine("Ingrese el primer número:");
+    int num1 = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Ingrese el segundo número:");
+    int num2 = int.Parse(Console.ReadLine());
+
+    // Máximo y mínimo
+    int maximo = Math.Max(num1, num2);
+    int minimo = Math.Min(num1, num2);
+
+    Console.WriteLine($"El número mayor es: {maximo}");
+    Console.WriteLine($"El número menor es: {minimo}");
 }
